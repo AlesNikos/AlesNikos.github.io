@@ -225,10 +225,15 @@ section {
 }
 .price-header-btn {
   margin-top: 2.5rem;
+  padding: 2rem 3rem;
   font-size: 1.6rem;
 }
 .price-button {
   text-align: right;
+}
+.price-btn {
+  padding: 2rem 6rem;
+  font-size: 1.6rem;
 }
 .price-block {
   padding: 1rem 3rem 4rem;
@@ -272,8 +277,10 @@ section {
   vertical-align: middle;
 }
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
   background-size: cover;
+  /* Форма обратной связи */
 }
 .feedback-prev-btn {
   left: -4rem;
@@ -333,6 +340,31 @@ section {
 }
 .feedback-slider-btn img {
   width: 50%;
+}
+.feedback-form {
+  margin-top: 5rem;
+  padding: 5rem 10rem;
+  background-color: #fff;
+  text-align: center;
+}
+.feedback-form h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.feedback-form label {
+  transform: translate(-50%, 6px);
+}
+.feedback-btn {
+  max-width: 25rem;
+  margin: auto;
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
 }
 .popup {
   display: none;

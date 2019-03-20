@@ -257,10 +257,15 @@ section {
   background: @icons-color url(../img/prices/prices-bg.jpg) center;
   &-header-btn {
     margin-top: 2.5rem;
+    padding: 2rem 3rem;
     font-size: 1.6rem;
   }
   &-button {
     text-align: right;
+  }
+  &-btn {
+    padding: 2rem 6rem;
+    font-size: 1.6rem;
   }
   // Карточки с тарифами
   &-block {
@@ -310,6 +315,7 @@ section {
 
 //  Секция с отзывами
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
   background-size: cover;
   &-prev-btn {
@@ -371,6 +377,32 @@ section {
       }
     }
   }
+  /* Форма обратной связи */
+  &-form {
+    margin-top: 5rem;
+    padding: 5rem 10rem;
+    background-color: @light;
+    text-align: center;
+    h3 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      .bold();
+    }
+    label {
+      transform: translate(-50%, 6px);
+    }
+  }
+  &-btn {
+    max-width: 25rem;
+    margin: auto;
+  }
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
 }
 // Оформление модальных окон
 .popup {
