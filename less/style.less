@@ -69,7 +69,33 @@ button, input, a, textarea {
     background-color: darken(@btn-color, 5%);
   }
 }
-
+/* Оформление форм */
+.form {
+  /* Поле для ввода */
+  &-input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border: 1px solid @border-input;
+    border-radius: 5px;
+    padding: 1.7rem;
+  }
+  label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    background-color: @light;
+  }
+  /* Кнопка Оставить заявку */
+  &-btn {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    font-size: 1.6rem;
+  }
+}
 /* Typography */
 section {
   padding: 10rem 0;
@@ -145,31 +171,7 @@ section {
       strong {
         font-size: 1.8rem;
       }
-    }
-    /* Поле для ввода */
-    &-input {
-      display: block;
-      margin: 2rem 0;
-      width: 100%;
-      border: 1px solid @border-input;
-      border-radius: 5px;
-      padding: 1.7rem;
-    }
-    label {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0.5rem;
-      font-size: 1.3rem;
-      background-color: @light;
-    }
-    /* Кнопка Оставить заявку */
-    &-btn {
-      display: block;
-      width: 100%;
-      height: 6.5rem;
-      font-size: 1.6rem;
-    }
+    }   
     /* Подпись под кнопкой */
     small {
       display: block;
