@@ -205,7 +205,7 @@
           <div class="feedback-slider_item">
             <div class="row">
               <div class="col-md-6">
-                <div class="fotorama" data-width="100%" data-nav="thumbs" data-auto="false">
+                <div class="fotorama" data-width="100%" data-nav="thumbs">
                   <img src="img/feedback/photo/1.jpg" alt="">
                   <img src="img/feedback/photo/2.jpg" alt="">
                   <img src="img/feedback/photo/3.jpg" alt="">
@@ -394,15 +394,14 @@
           event.preventDefault();
           $('.popup').fadeOut();
         }); 
+
         // Слайдер с отзывами
         $('.feedback-slider').slick({
           prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/prevArrow.svg" alt="" /></button>',
           nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/nextArrow.svg" alt="" /></button>'
         });
-        $(function () {
-          $('.fotorama').fotorama();
-        });
-          // Слайдер с преимуществами
+
+        // Слайдер с преимуществами
         $('.features-slider').slick({
           infinite: true,
           slidesToShow: 4,
