@@ -404,6 +404,20 @@ section {
   left: 0;
   max-width: 35rem;
 }
+
+/* Схема работы */
+.scheme {
+  background: #fff url(../img/scheme-bg.png) bottom right -10rem no-repeat;
+  background-size: 60rem;
+  &-block {
+    min-height: 30rem;
+    h3 {
+      font-size: 2.2rem;
+      .bold();
+    }
+  }
+}
+
 // Оформление модальных окон
 .popup {
   display: none;
@@ -501,10 +515,18 @@ section {
   }
 }
 @media (max-width: 767px) {
+  section {
+    padding: 3rem 0;
+  }
   .main {
     background-position: left;
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+    }
+  }
+  .section-header {
+    h2 {
+      font-size: 2.4rem;
     }
   }
   .header {
@@ -514,11 +536,32 @@ section {
     text-align: center;
   }
   .feedback {
+    .section-header {
+      margin: 2rem 0;
+    }
+    &-form {
+      padding: 3rem 1rem;
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
     &-prev-btn {
       left: 0;
     }
     &-next-btn {
       right: 0;
+    }
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+    &-block {
+      min-height: 25rem;
+    }
+    .section-header {
+      p {
+        font-size: 1.6rem;
+      }
     }
   }
 
