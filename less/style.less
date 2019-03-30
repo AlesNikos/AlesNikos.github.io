@@ -38,6 +38,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @problems-color: #e8e8e8;
+@upsell-bg: #286b0a;
 
 /* Basic setting */
 html {
@@ -565,6 +566,33 @@ section {
   }
 }
 
+/* Дополнительные услуги */
+.upsell {
+  background-color: @upsell-bg;
+  &-block {
+    &s {
+      margin-top: 3rem;
+    }
+    img {
+      display: inline-block;
+      margin-bottom: 3rem;
+      width: 100%;
+      max-width: 30rem;
+    }
+    p {
+      margin-bottom: 3rem;
+      font-size: 2rem;
+    }
+    min-height: 30rem;
+    text-align: center;
+    color: @light;
+  }
+  &-btn {
+    padding: 1.5rem 4rem;
+    font-size: 1.6rem;
+  }
+}
+
 // Оформление модальных окон
 .popup {
   display: none;
@@ -694,6 +722,11 @@ section {
   }
   .tour {
     background: @bg-light;
+  }
+  .upsell {
+    &-block {
+      min-height: 33rem;
+    }
   }
 }
 
