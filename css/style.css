@@ -143,6 +143,7 @@ section {
   /* Подпись под кнопкой */
 }
 .main-form-header {
+  margin-top: 0.5rem;
   margin-bottom: 4rem;
   font-size: 1.8rem;
 }
@@ -497,6 +498,28 @@ section {
   display: block;
   margin: 0 auto;
 }
+/* Посмотрите как мы работаем */
+.tour {
+  background: #fff url(../img/tour.jpg) center no-repeat;
+  background-size: cover;
+}
+.tour-content {
+  margin-top: 0;
+}
+.tour-header {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 4rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+.tour-btn {
+  font-size: 1.4rem;
+}
 .popup {
   display: none;
   position: fixed;
@@ -546,11 +569,18 @@ section {
   .feedback .fotorama {
     margin-bottom: 3rem;
   }
+  .price-header-btn {
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
   .scheme {
     background-size: 55rem;
   }
   .problems-list {
     min-height: 40rem;
+  }
+  .tour-subtitle {
+    font-size: 2rem;
   }
 }
 @media (max-width: 991px) {
@@ -596,6 +626,9 @@ section {
   .problems-women {
     display: none;
   }
+  .tour {
+    background: #f5f5f5;
+  }
 }
 @media (max-width: 767px) {
   section {
@@ -606,6 +639,12 @@ section {
   }
   .main h1 {
     font-size: 2.2rem;
+  }
+  .main-form {
+    padding: 2rem;
+  }
+  .main-form-header {
+    font-size: 1.6rem;
   }
   .section-header {
     margin: 4rem 0;
@@ -646,5 +685,17 @@ section {
   }
   .scheme-block {
     min-height: 25rem;
+  }
+  .tour-content {
+    margin-top: 0;
+  }
+  .tour-header {
+    font-size: 3rem;
+  }
+  .tour-subtitle {
+    font-size: 1.5rem;
+  }
+  .tour-btn {
+    padding: 1rem 2.5rem;
   }
 }

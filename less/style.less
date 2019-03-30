@@ -167,6 +167,7 @@ section {
     text-align: center;
     /* Заголовок формы */
     &-header {
+      margin-top: 0.5rem;
       margin-bottom: 4rem;
       font-size: 1.8rem;
       strong {
@@ -541,6 +542,29 @@ section {
   }
 }
 
+/* Посмотрите как мы работаем */
+.tour {
+  background: @light url(../img/tour.jpg) center no-repeat;
+  background-size: cover;
+  &-content {
+    margin-top: 0;
+  }
+  &-header {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    .bold();
+    font-size: 4rem;  
+    line-height: 1.45;
+    text-transform: uppercase;
+  }
+  &-subtitle {
+    font-size: 2.2rem;
+  }
+  &-btn {
+    font-size: 1.4rem;
+  }
+}
+
 // Оформление модальных окон
 .popup {
   display: none;
@@ -594,12 +618,23 @@ section {
       margin-bottom: 3rem;
     }
   }
+  .price {
+    &-header-btn {
+      padding: 2rem;
+      font-size: 1.3rem;
+    }
+  }
   .scheme {
     background-size: 55rem;
   }
   .problems {
     &-list {
       min-height: 40rem;
+    }
+  }
+  .tour {
+    &-subtitle {
+      font-size: 2rem;
     }
   }
 }
@@ -657,6 +692,9 @@ section {
       display: none;
     }
   }
+  .tour {
+    background: @bg-light;
+  }
 }
 
 @media (max-width: 767px) {
@@ -667,6 +705,12 @@ section {
     background-position: left;
     h1 {
       font-size: 2.2rem;
+    }
+    &-form {
+      padding: 2rem;
+      &-header {
+        font-size: 1.6rem;
+      }
     }
   }
   .section-header {
@@ -713,6 +757,20 @@ section {
     text-align: center;
     &-block {
       min-height: 25rem;
+    }
+  }
+  .tour {
+    &-content {
+      margin-top: 0;
+    }
+    &-header {
+      font-size: 3rem;
+    }
+    &-subtitle {
+      font-size: 1.5rem;
+    }
+    &-btn {
+      padding: 1rem 2.5rem;
     }
   }
 }
