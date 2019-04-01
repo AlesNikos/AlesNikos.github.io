@@ -284,6 +284,9 @@ section {
   background-size: cover;
   /* Форма обратной связи */
 }
+.feedback-block {
+  position: relative;
+}
 .feedback-prev-btn {
   left: -4rem;
 }
