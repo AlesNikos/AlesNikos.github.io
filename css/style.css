@@ -49,7 +49,8 @@ textarea:focus {
   /* Поле для ввода */
   /* Кнопка Оставить заявку */
 }
-.form-input {
+.form-input,
+.form-textarea {
   display: block;
   margin: 2rem 0;
   width: 100%;
@@ -546,6 +547,50 @@ section {
   padding: 1.5rem 4rem;
   font-size: 1.6rem;
 }
+/* Контакты */
+.contacts {
+  background: #fff url(../img/contacts-bg.jpg) center bottom no-repeat;
+  background-size: cover;
+  /* Оформление заголовка в форме */
+}
+.contacts h2 {
+  font-size: 3.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts p {
+  margin: 3rem 0;
+}
+.contacts-link {
+  display: inline-block;
+  color: #1a1820;
+  border-bottom: 1px dotted #1a1820;
+}
+.contacts-link:hover {
+  color: #020203;
+}
+.contacts-form h2 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+.contacts-btn {
+  font-size: 1.4rem;
+}
+/* Оформление подвала */
+footer {
+  padding: 4rem 0;
+}
+.footer-contacts {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.footer-contacts p {
+  margin: 0;
+}
+.footer-dev-logo {
+  text-align: right;
+}
 .popup {
   display: none;
   position: fixed;
@@ -653,10 +698,30 @@ section {
     display: none;
   }
   .tour {
-    background: #f5f5f5;
+    background: none;
+    background-color: #f5f5f5;
   }
   .upsell-block {
     min-height: 33rem;
+  }
+  .contacts {
+    background: none;
+    background-color: #f5f5f5;
+  }
+  .contacts-block {
+    text-align: center;
+  }
+  .contacts-form {
+    margin-top: 3rem;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-contacts {
+    margin: 3rem 0;
+  }
+  .footer-dev-logo {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -725,6 +790,12 @@ section {
     font-size: 1.5rem;
   }
   .tour-btn {
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
+  }
+  .contacts-block h2 {
+    font-size: 2.4rem;
+  }
+  .contacts-btn {
+    padding: 1rem 2rem;
   }
 }
