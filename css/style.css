@@ -607,6 +607,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .popup-content {
+  max-width: 35.5rem;
+  width: 100%;
   position: fixed;
   text-align: center;
   left: 50%;
@@ -800,5 +802,13 @@ footer {
   }
   .contacts-btn {
     padding: 1rem 2rem;
+  }
+  .popup-content {
+    max-width: 27rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .popup-form {
+    padding: 0;
   }
 }
