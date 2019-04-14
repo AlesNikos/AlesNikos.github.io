@@ -45,53 +45,11 @@ textarea:focus {
   cursor: pointer;
   background-color: #85b528;
 }
-/* header */
-.header {
-  height: 8.7rem;
-  background: rgba(0, 0, 0, 0.62);
-}
-/* Оформление логотипа */
-.logo .media {
-  margin-top: 2rem;
-}
-.logo .media-body {
-  vertical-align: bottom;
-}
-.logo .media-left {
-  padding-right: 1.5rem;
-}
-.logo .media h4 {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
-}
-/* Оформление номера телефона */
-.phone-block {
-  margin-top: 2rem;
-  text-align: right;
-  line-height: 1.2;
-}
-.phone-number {
-  font-size: 2.4rem;
-  font-family: 'HelveticaNeueCyr_bold', sans-serif;
-  color: #fff;
-}
-.phone-number:hover {
-  color: #cccccc;
-}
-.phone-link {
-  display: block;
-  font-size: 2rem;
-  color: #94ca2d;
-}
-.phone-link:hover {
-  color: #75a024;
-}
-/* Оформление  главного заголовка*/
+/* main */
 .main {
   background: #000 url(../img/main/main-bg.jpg) center no-repeat;
   background-size: cover;
+  padding-bottom: 2rem;
   /* Подзаголовок */
 }
 .main-content {
@@ -116,10 +74,48 @@ textarea:focus {
 .main-glasses {
   margin-top: 4.5rem;
   margin-left: -2rem;
-  margin-bottom: 2rem;
 }
 .main-dinosaur {
   position: absolute;
-  bottom: -26rem;
-  right: -1.5rem;
+  top: -6rem;
+  right: 0;
+}
+.header {
+  height: 8.7rem;
+  padding-top: 2rem;
+  background: rgba(0, 0, 0, 0.62);
+}
+/* Оформление логотипа */
+.logo .media-body {
+  vertical-align: bottom;
+}
+.logo .media-left {
+  padding-right: 1.5rem;
+}
+.logo .media h4 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+/* Оформление номера телефона */
+.phone-block {
+  text-align: right;
+  line-height: 1.2;
+}
+.phone-number {
+  font-size: 2.4rem;
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+  color: #fff;
+}
+.phone-number:hover {
+  color: #cccccc;
+}
+.phone-link {
+  display: block;
+  font-size: 2rem;
+  color: #94ca2d;
+}
+.phone-link:hover {
+  color: #75a024;
 }
