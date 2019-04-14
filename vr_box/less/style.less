@@ -70,12 +70,6 @@ button, input, a, textarea {
 }
 
 /* header */
-header {
-  background: url(../img/header-bg.jpg) center no-repeat;
-  background-size: cover;
-  box-shadow: 0 0 0 40rem rgba(0, 0, 0, 0.6) inset;
-  padding-bottom: 28rem;
-}
 .header {
   height: 8.7rem;
   background: rgba(0, 0, 0, 0.62);
@@ -103,6 +97,7 @@ header {
   &-block {
     margin-top: 2rem;
     text-align: right;
+    line-height: 1.2;
   }
   &-number {
     font-size: 2.4rem;
@@ -123,6 +118,8 @@ header {
 }
 /* Оформление  главного заголовка*/
 .main {
+  background: #000 url(../img/main/main-bg.jpg) center no-repeat;
+  background-size: cover;
   &-content {
     position: relative;
     margin-top: 10rem;
@@ -144,9 +141,9 @@ header {
     color: @light;
   }
   &-glasses {
-    position: absolute;
-    bottom: -26rem;
-    left: -1.5rem;
+    margin-top: 4.5rem;
+    margin-left: -2rem;
+    margin-bottom: 2rem;
   }
   &-dinosaur {
     position: absolute;

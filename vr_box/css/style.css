@@ -46,12 +46,6 @@ textarea:focus {
   background-color: #85b528;
 }
 /* header */
-header {
-  background: url(../img/header-bg.jpg) center no-repeat;
-  background-size: cover;
-  box-shadow: 0 0 0 40rem rgba(0, 0, 0, 0.6) inset;
-  padding-bottom: 28rem;
-}
 .header {
   height: 8.7rem;
   background: rgba(0, 0, 0, 0.62);
@@ -76,6 +70,7 @@ header {
 .phone-block {
   margin-top: 2rem;
   text-align: right;
+  line-height: 1.2;
 }
 .phone-number {
   font-size: 2.4rem;
@@ -95,6 +90,8 @@ header {
 }
 /* Оформление  главного заголовка*/
 .main {
+  background: #000 url(../img/main/main-bg.jpg) center no-repeat;
+  background-size: cover;
   /* Подзаголовок */
 }
 .main-content {
@@ -117,9 +114,9 @@ header {
   color: #fff;
 }
 .main-glasses {
-  position: absolute;
-  bottom: -26rem;
-  left: -1.5rem;
+  margin-top: 4.5rem;
+  margin-left: -2rem;
+  margin-bottom: 2rem;
 }
 .main-dinosaur {
   position: absolute;
