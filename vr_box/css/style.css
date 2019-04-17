@@ -77,7 +77,7 @@ textarea:focus {
 }
 .main-dinosaur {
   position: absolute;
-  top: -6rem;
+  top: -12rem;
   right: 0;
 }
 .header {
@@ -118,4 +118,48 @@ textarea:focus {
 }
 .phone-link:hover {
   color: #75a024;
+}
+@media (max-width: 1199px) {
+  .main-content h1 {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 991px) {
+  .main-glasses img {
+    width: 100%;
+    max-width: 35rem;
+  }
+  .main-dinosaur {
+    top: -6rem;
+  }
+  .main-dinosaur img {
+    width: 100%;
+    max-width: 40rem;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    height: 10.7rem;
+  }
+  .logo .media-body {
+    vertical-align: bottom;
+  }
+  .logo .media-left img {
+    max-width: 5rem;
+  }
+  .logo .media h4 {
+    font-size: 1.2rem;
+  }
+  .phone-block {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .phone-number {
+    font-size: 1.7rem;
+  }
+  .phone-link {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
 }

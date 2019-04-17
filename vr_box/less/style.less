@@ -104,7 +104,7 @@ button, input, a, textarea {
 
   &-dinosaur {
     position: absolute;
-    top: -6rem;
+    top: -12rem;
     right: 0;
   }
 }
@@ -117,7 +117,6 @@ button, input, a, textarea {
 /* Оформление логотипа */
 .logo {
   .media {
-    // margin-top: 2rem;
     &-body {
       vertical-align: bottom;
     }
@@ -157,3 +156,65 @@ button, input, a, textarea {
   }
 }
 
+@media (max-width: 1199px) {
+  .main {
+    &-content {
+      h1 {
+        font-size: 3.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    &-glasses {
+      img {
+        width: 100%;
+        max-width: 35rem;
+      }
+    }
+    &-dinosaur {
+      top: -6rem;
+      img {
+        width: 100%;
+        max-width: 40rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 10.7rem;
+  }
+  .logo {
+    .media {
+      &-body {
+        vertical-align: bottom;
+      }
+      &-left {
+        img {
+          max-width: 5rem;
+        }
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .phone {
+    &-block {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    &-number {
+      font-size: 1.7rem;
+    }
+    &-link {
+      display: inline-block;
+      margin-left: 1rem;
+      font-size: 1.4rem;
+    }
+  }
+}
