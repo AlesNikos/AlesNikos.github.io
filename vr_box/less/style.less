@@ -34,7 +34,8 @@
 @text: #000;
 @light: #fff;
 @icons-color: #18a7d0;
-@bg-light: #f8f8f0;
+@bg-light_1: #f8f8f0;
+@bg-light_2: #fcfcf6;
 
 /* Basic setting */
 html {
@@ -157,12 +158,97 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление секции о vr box */
+.about {
+  background-color: @bg-light_1;
+  padding: 10rem 0 7rem;
+  &-block {
+    position: relative;
+  }
+  &-title {
+    h2 {
+      margin-top: 0;
+      margin-bottom: 4rem;
+      font-size: 3.5rem;
+      .bold();
+    }
+  }
+  &-subtitle {
+    font-size: 1.6rem;
+  }
+  &-img {
+    float: right;
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 52rem;
+    }
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    &__text {
+      position: absolute;
+      bottom: -6.2rem;
+      right: 4rem;
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+      p {
+        text-align: right;
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &-equipment {
+    margin-top: -12rem;
+    h4 {
+      margin-bottom: 1.4rem;
+      font-size: 2rem;
+      .bold();
+    }
+  }
+  &-list {
+    padding: 0;
+    min-height: 12rem;
+    list-style: none;
+    font-size: 1.7rem;
+  }
+  &-price {
+    font-size: 2rem;
+    .bold();
+    span {
+      margin-left: 1rem;
+      font-size: 2.5rem;
+      color: #b61919;
+    }
+  }
+  &-btn {
+    margin-top: 3rem;
+    padding: 2.5rem 2.5rem 2rem;
+    box-shadow: 0 4px 0 #76ae0c;
+  }
+}
+
+
 @media (max-width: 1199px) {
   .main {
     &-content {
       h1 {
         font-size: 3.3rem;
       }
+    }
+  }
+  .about {
+    &-img {
+      img {
+        max-width: 40rem;
+      }
+    }
+    &-equipment {
+      margin-top: -5rem;
     }
   }
 }
@@ -183,6 +269,24 @@ button, input, a, textarea {
       }
     }
   }
+   .about {
+     &-img {
+       margin-top: 3rem;
+       margin-bottom: 6rem;
+       text-align: center;
+       width: 100%;
+       img {
+         max-width: 50rem;
+       }
+       &__text {
+         bottom: -6rem;
+         right: 17rem;
+       }
+     }
+     &-equipment {
+       margin-top: 0;
+     }
+   }
 }
 
 @media (max-width: 767px) {
