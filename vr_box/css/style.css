@@ -188,6 +188,43 @@ textarea:focus {
   padding: 2.5rem 2.5rem 2rem;
   box-shadow: 0 4px 0 #76ae0c;
 }
+/* Оформление блока с возможностями 1 */
+.opportunities {
+  position: relative;
+  padding: 10rem 0 8rem;
+  background: #fcfcf6;
+}
+.opportunities-car {
+  display: block;
+}
+.opportunities-car_mob {
+  display: none;
+}
+.opportunities-block {
+  margin-top: 6.8rem;
+}
+.opportunities-block .media-body h4 {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+}
+.opportunities-block .media-body p {
+  max-width: 36rem;
+  font-size: 1.7rem;
+}
+.opportunities .iron-man {
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+.cube-1 {
+  position: absolute;
+  top: 14rem;
+  left: 7rem;
+}
+.cube-2 {
+  position: absolute;
+  top: 18rem;
+}
 @media (max-width: 1199px) {
   .main-content h1 {
     font-size: 3.3rem;
@@ -197,6 +234,12 @@ textarea:focus {
   }
   .about-equipment {
     margin-top: -5rem;
+  }
+  .cube-1 {
+    display: none;
+  }
+  .cube-2 {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -226,6 +269,15 @@ textarea:focus {
   }
   .about-equipment {
     margin-top: 0;
+  }
+  .opportunities-car {
+    display: none;
+  }
+  .opportunities-car_mob {
+    display: block;
+  }
+  .opportunities .iron-man {
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -295,6 +347,23 @@ textarea:focus {
   .about-img__text p {
     font-size: 1.3rem;
   }
+  .opportunities {
+    text-align: center;
+  }
+  .opportunities-block .media-left {
+    display: inline-block;
+  }
+  .opportunities-block .media-body {
+    display: inline-block;
+    width: 100%;
+    max-width: 40rem;
+    text-align: left;
+  }
+  .opportunities .iron-man,
+  .opportunities .car {
+    width: 100%;
+    max-width: 50rem;
+  }
 }
 @media (max-width: 590px) {
   .main-content h1 {
@@ -333,6 +402,23 @@ textarea:focus {
   .about-btn {
     padding: 1.6rem 1.5rem 1.3rem;
     font-size: 1.5rem;
+  }
+  .opportunities {
+    padding: 3rem 0 6rem;
+  }
+  .opportunities-block .media-object {
+    width: 100%;
+    max-width: 3rem;
+  }
+  .opportunities-block .media-body {
+    max-width: 35rem;
+  }
+  .opportunities-block .media-body h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  .opportunities-block .media-body p {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 450px) {
@@ -409,5 +495,24 @@ textarea:focus {
     margin-top: 2rem;
     padding: 1.6rem 1.5rem 1.3rem;
     font-size: 1rem;
+  }
+  .opportunities-block {
+    margin-top: 3rem;
+  }
+  .opportunities-block .media {
+    width: 100%;
+  }
+  .opportunities-block .media-object {
+    width: 100%;
+    max-width: 3rem;
+  }
+  .opportunities-block .media-body {
+    max-width: 24rem;
+  }
+  .opportunities-block .media-body h4 {
+    font-size: 1.4rem;
+  }
+  .opportunities-block .media-body p {
+    font-size: 1.2rem;
   }
 }

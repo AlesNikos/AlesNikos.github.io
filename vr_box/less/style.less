@@ -229,6 +229,50 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока с возможностями 1 */
+.opportunities {
+  position: relative;
+  padding: 10rem 0 8rem;
+  background: @bg-light_2;
+  &-car {
+    display: block;
+    &_mob {
+      display: none;
+    }
+  }
+  &-block {
+    margin-top: 6.8rem;
+    .media {
+      &-body {
+        h4 {
+          margin-bottom: 2rem;
+          font-size: 2.2rem;
+          .bold();
+        }
+        p {
+          max-width: 36rem;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+  .iron-man {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+  }
+}
+.cube {
+  &-1 {
+    position: absolute;
+    top: 14rem;
+    left: 7rem;
+  }
+  &-2 {
+    position: absolute;
+    top: 18rem;
+  }
+}
+
 
 @media (max-width: 1199px) {
   .main {
@@ -246,6 +290,14 @@ button, input, a, textarea {
     }
     &-equipment {
       margin-top: -5rem;
+    }
+  }
+  .cube {
+    &-1 {
+      display: none;
+    }
+    &-2 {
+      display: none;
     }
   }
 }
@@ -266,24 +318,35 @@ button, input, a, textarea {
       }
     }
   }
-   .about {
-     &-img {
-       margin-top: 3rem;
-       margin-bottom: 6rem;
-       text-align: center;
-       width: 100%;
-       img {
-         max-width: 50rem;
-       }
-       &__text {
-         bottom: -6rem;
-         right: 17rem;
-       }
-     }
-     &-equipment {
-       margin-top: 0;
-     }
-   }
+  .about {
+    &-img {
+      margin-top: 3rem;
+      margin-bottom: 6rem;
+      text-align: center;
+      width: 100%;
+      img {
+        max-width: 50rem;
+      }
+      &__text {
+        bottom: -6rem;
+        right: 17rem;
+      }
+    }
+    &-equipment {
+      margin-top: 0;
+    }
+  }
+  .opportunities {
+    &-car {
+      display: none;
+      &_mob {
+        display: block;
+      }
+    }
+    .iron-man {
+      margin: 0;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -363,6 +426,26 @@ button, input, a, textarea {
       }
     }
   }
+  .opportunities {
+    text-align: center;
+    &-block {
+      .media {
+        &-left {
+          display: inline-block;
+        }
+        &-body {
+          display: inline-block;
+          width: 100%;
+          max-width: 40rem;
+          text-align: left;
+        }
+      }
+    }
+    .iron-man, .car {
+      width: 100%;
+      max-width: 50rem;
+    } 
+  }
 }
 
 @media (max-width: 590px) {
@@ -413,6 +496,27 @@ button, input, a, textarea {
     &-btn {
       padding: 1.6rem 1.5rem 1.3rem;
       font-size: 1.5rem;
+    }
+  }
+  .opportunities {
+    padding: 3rem 0 6rem;
+    &-block {
+      .media {
+        &-object {
+          width: 100%;
+          max-width: 3rem;
+        }
+        &-body {
+          max-width: 35rem;
+          h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
   }
 }
@@ -503,6 +607,27 @@ button, input, a, textarea {
       margin-top: 2rem;
       padding: 1.6rem 1.5rem 1.3rem;
       font-size: 1rem;
+    }
+  }
+  .opportunities {
+    &-block {
+      margin-top: 3rem;
+      .media {
+        width: 100%;
+        &-object {
+          width: 100%;
+          max-width: 3rem;
+        }
+        &-body {
+          max-width: 24rem;
+          h4 {
+            font-size: 1.4rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
   }
 }
