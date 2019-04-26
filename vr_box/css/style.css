@@ -225,29 +225,6 @@ textarea:focus {
   position: absolute;
   top: 18rem;
 }
-/* Тестовый блок */
-.test {
-  max-width: 44rem;
-}
-.test-left {
-  float: left;
-  width: 13%;
-}
-.test-body {
-  float: right;
-  width: 87%;
-}
-.test-body h4 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-size: 2.2rem;
-  font-family: 'HelveticaNeueCyr_bold', sans-serif;
-}
-.test-body p {
-  max-width: 36rem;
-  font-size: 1.7rem;
-}
-/* Тестовый блок */
 @media (max-width: 1199px) {
   .main-content h1 {
     font-size: 3.3rem;
@@ -373,13 +350,11 @@ textarea:focus {
   .opportunities {
     text-align: center;
   }
-  .opportunities-block .media-left {
-    display: inline-block;
+  .opportunities-block {
+    margin: 6.8rem auto 0;
+    width: 75%;
   }
   .opportunities-block .media-body {
-    display: inline-block;
-    width: 100%;
-    max-width: 40rem;
     text-align: left;
   }
   .opportunities .iron-man,
@@ -429,12 +404,11 @@ textarea:focus {
   .opportunities {
     padding: 3rem 0 6rem;
   }
-  .opportunities-block .media-object {
-    width: 100%;
-    max-width: 3rem;
+  .opportunities-block {
+    width: 80%;
   }
-  .opportunities-block .media-body {
-    max-width: 35rem;
+  .opportunities-block .media-object {
+    max-width: 3rem;
   }
   .opportunities-block .media-body h4 {
     margin-bottom: 0.5rem;
@@ -521,16 +495,7 @@ textarea:focus {
   }
   .opportunities-block {
     margin-top: 3rem;
-  }
-  .opportunities-block .media {
-    width: 100%;
-  }
-  .opportunities-block .media-object {
-    width: 100%;
-    max-width: 3rem;
-  }
-  .opportunities-block .media-body {
-    max-width: 24rem;
+    width: 95%;
   }
   .opportunities-block .media-body h4 {
     font-size: 1.4rem;
