@@ -273,7 +273,62 @@ button, input, a, textarea {
   }
 }
 
-
+/* Оформление секции с заказом vr box */
+.order {
+  padding: 2.5rem 0;
+  background: #000 url(../img/order/order-bg.jpg) center no-repeat;
+  background-size: cover;
+  &-title {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    .bold();
+    color: @light;
+  }
+  &-arrow {
+    position: relative;
+    max-width: 49rem;
+    border-radius: 3px 0 0 3px;
+    background-color: #18a7d0;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 3.5rem solid transparent;
+      border-left-color: #18a7d0;
+      border-width: 3.5rem 0 3.5rem 1.5rem;
+      top: 0;
+      right: -1.5rem;
+    }
+  }
+  &-subtitle {
+    margin-bottom: 4rem;
+    padding: 1rem 3rem 1rem 2rem;
+    font-size: 1.8rem;
+    color: @light;
+  }
+  &-block {
+    margin-right: 2.5rem;
+    display: inline-block;
+    max-width: 23rem;
+    min-height: 7rem;
+    vertical-align: top;
+    .media {
+      &-body {
+        font-size: 1.8rem;
+        color: @light;
+      }
+    }
+    &-1 {
+      .media {
+        &-body {
+          max-width: 17rem;
+        }
+      }
+    }
+  }
+}
 
 
 @media (max-width: 1199px) {
