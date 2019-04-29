@@ -241,7 +241,18 @@ textarea:focus {
 }
 .cube-2 {
   position: absolute;
-  top: 18rem;
+  top: -13rem;
+  right: -10rem;
+}
+.cube-3 {
+  position: absolute;
+  bottom: 4.5rem;
+  left: -0.5rem;
+}
+.cube-4 {
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
 }
 /* Оформление секции с заказом vr box */
 .order {
@@ -320,6 +331,19 @@ textarea:focus {
   font-size: 1.5rem;
   color: #fff;
 }
+/* Оформление блока с возможностями 2 */
+.opportunities-2 {
+  padding: 6rem 0;
+}
+.opportunities-2 .ski-man {
+  margin-bottom: 6rem;
+}
+.opportunities-2-block .media-body {
+  width: 35rem;
+}
+.opportunities-2 .games {
+  width: 97%;
+}
 @media (max-width: 1199px) {
   .main-content h1 {
     font-size: 3.3rem;
@@ -330,11 +354,13 @@ textarea:focus {
   .about-equipment {
     margin-top: -5rem;
   }
-  .cube-1 {
-    display: none;
-  }
   .cube-2 {
-    display: none;
+    top: -10rem;
+    right: -1rem;
+  }
+  .cube-3 {
+    bottom: 4.5rem;
+    left: 0;
   }
   .order-subtitle {
     font-size: 1.7rem;
@@ -380,6 +406,9 @@ textarea:focus {
   .opportunities .iron-man {
     margin: 0;
   }
+  .cube-1 {
+    display: none;
+  }
   .order-title {
     width: 95%;
     text-align: center;
@@ -399,6 +428,9 @@ textarea:focus {
   }
   .order-btn {
     width: 100%;
+  }
+  .opportunities-2 {
+    display: none;
   }
 }
 @media (max-width: 767px) {

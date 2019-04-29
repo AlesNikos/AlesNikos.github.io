@@ -288,7 +288,18 @@ button, input, a, textarea {
   }
   &-2 {
     position: absolute;
-    top: 18rem;
+    top: -13rem;
+    right: -10rem;
+  }
+  &-3 {
+    position: absolute;
+    bottom: 4.5rem;
+    left: -0.5rem;
+  }
+  &-4 {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
   }
 }
 
@@ -376,6 +387,24 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока с возможностями 2 */
+.opportunities-2 {
+  padding: 6rem 0;
+  .ski-man {
+    margin-bottom: 6rem;
+  }
+  &-block {
+    .media {
+      &-body {
+        width: 35rem;
+      }
+    }
+  }
+  .games {
+    width: 97%;
+  }
+}
+
 
 @media (max-width: 1199px) {
   .main {
@@ -396,11 +425,13 @@ button, input, a, textarea {
     }
   }
   .cube {
-    &-1 {
-      display: none;
-    }
     &-2 {
-      display: none;
+      top: -10rem;
+      right: -1rem;
+    }
+    &-3 {
+      bottom: 4.5rem;
+      left: 0;
     }
   }
   .order {
@@ -458,6 +489,11 @@ button, input, a, textarea {
       margin: 0;
     }
   }
+  .cube {
+    &-1 {
+      display: none;
+    }
+  }
   .order {
     &-title {
       width: 95%;
@@ -479,6 +515,9 @@ button, input, a, textarea {
     &-btn {
       width: 100%;
     }
+  }
+  .opportunities-2 {
+    display: none;
   }
 }
 
