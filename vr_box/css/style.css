@@ -64,6 +64,21 @@ textarea:focus {
 .form-btn {
   padding: 2rem 4.4rem;
 }
+/* Typography */
+.section-header {
+  text-align: center;
+}
+.section-header h2 {
+  margin: 0;
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+  font-size: 3.5rem;
+}
+.section-header hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  width: 5.6rem;
+  border-top: 0.5rem solid #18a7d0;
+}
 /* main */
 .main {
   background: #000 url(../img/main/main-bg.jpg) center no-repeat;
@@ -141,7 +156,7 @@ textarea:focus {
 /* Оформление секции о vr box */
 .about {
   padding: 10rem 0 7rem;
-  background: #f8f8f0 url(../img/about/bg.png) bottom repeat-x;
+  background: #f8f8f0 url(../img/bg-line.png) bottom repeat-x;
 }
 .about-block {
   position: relative;
@@ -334,6 +349,7 @@ textarea:focus {
 /* Оформление блока с возможностями 2 */
 .opportunities-2 {
   padding: 6rem 0;
+  background: #fcfcf6 url(../img/bg-line.png) bottom repeat-x;
 }
 .opportunities-2 .ski-man {
   margin-bottom: 6rem;
@@ -343,6 +359,47 @@ textarea:focus {
 }
 .opportunities-2 .games {
   width: 97%;
+}
+/* Оформление блока Как это работает */
+.process {
+  padding: 10rem 0 8rem;
+  background-color: #f8f8f0;
+}
+.process-block {
+  min-height: 25rem;
+  text-align: center;
+}
+.process-image {
+  display: block;
+  min-height: 15rem;
+  line-height: 15rem;
+}
+.process-text {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+.section-header {
+  margin-bottom: 6.5rem;
+}
+.circle {
+  display: inline-block;
+  background-color: #18a7d0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5.7rem;
+  height: 5.6rem;
+  padding: 0.5rem;
+  border: 3px solid #18a7d0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4.5rem;
+  color: #fff;
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+  font-size: 3rem;
 }
 @media (max-width: 1199px) {
   .main-content h1 {
