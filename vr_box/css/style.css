@@ -252,6 +252,7 @@ textarea:focus {
 .order-title {
   margin-top: 6rem;
   margin-bottom: 2rem;
+  width: 37rem;
   font-size: 3.5rem;
   font-family: 'HelveticaNeueCyr_bold', sans-serif;
   color: #fff;
@@ -303,6 +304,9 @@ textarea:focus {
   border: 4px solid #21a3af;
   /* Заголовок формы */
   /* Подпись под кнопкой */
+}
+.order-form_mob {
+  display: none;
 }
 .order-form-header {
   margin-top: 0.5rem;
@@ -375,6 +379,26 @@ textarea:focus {
   }
   .opportunities .iron-man {
     margin: 0;
+  }
+  .order-title {
+    width: 95%;
+    text-align: center;
+    margin: 6rem auto 2rem;
+  }
+  .order-form {
+    margin-bottom: 2rem;
+    margin-left: 0;
+    max-width: 47rem;
+    width: 100%;
+  }
+  .order-form_desktop {
+    display: none;
+  }
+  .order-form_mob {
+    display: block;
+  }
+  .order-btn {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -459,6 +483,24 @@ textarea:focus {
     width: 100%;
     max-width: 50rem;
   }
+  .order {
+    text-align: center;
+  }
+  .order-title {
+    width: 62%;
+  }
+  .order-subtitle {
+    text-align: left;
+  }
+  .order-arrow {
+    margin: 0 auto;
+  }
+  .order-form {
+    margin: 0 auto 2rem;
+  }
+  .order-block {
+    text-align: left;
+  }
 }
 @media (max-width: 590px) {
   .main-content h1 {
@@ -512,6 +554,39 @@ textarea:focus {
     font-size: 1.6rem;
   }
   .opportunities-block .media-body p {
+    font-size: 1.4rem;
+  }
+  .order-title {
+    width: 90%;
+    margin: 1rem auto;
+    font-size: 2.2rem;
+  }
+  .order-subtitle {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  .order-arrow {
+    max-width: 40rem;
+  }
+  .order-arrow:after {
+    border-width: 3rem 0 3rem 1.5rem;
+  }
+  .order-form {
+    max-width: 40rem;
+    padding: 2rem 4rem;
+  }
+  .order-form-header {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .order-block {
+    max-width: 20rem;
+  }
+  .order-block .media-object {
+    width: 2.5rem;
+  }
+  .order-block .media-body {
     font-size: 1.4rem;
   }
 }
@@ -598,6 +673,45 @@ textarea:focus {
     font-size: 1.4rem;
   }
   .opportunities-block .media-body p {
+    font-size: 1.2rem;
+  }
+  .order-title {
+    width: 99%;
+    text-align: left;
+  }
+  .order-subtitle {
+    font-size: 1.2rem;
+  }
+  .order-arrow {
+    margin: 0;
+    max-width: 30rem;
+  }
+  .order-arrow:after {
+    border-width: 3.6rem 0 3.5rem 1rem;
+    right: -1rem;
+  }
+  .order-form {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .order-form-header {
+    font-size: 1.4rem;
+  }
+  .order-form-input {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+  }
+  .order-btn {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+  }
+  .order .form small {
+    font-size: 1.2rem;
+  }
+  .order-block {
+    max-width: 14.2rem;
+  }
+  .order-block .media-body {
     font-size: 1.2rem;
   }
 }
