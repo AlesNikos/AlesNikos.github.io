@@ -74,7 +74,7 @@ textarea:focus {
   font-size: 3.5rem;
 }
 .section-header hr {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
   width: 5.6rem;
   border-top: 0.5rem solid #18a7d0;
@@ -362,10 +362,12 @@ textarea:focus {
 }
 /* Оформление блока Как это работает */
 .process {
-  padding: 10rem 0 8rem;
-  background-color: #f8f8f0;
+  padding: 10rem 0 16rem;
+  background: #f8f8f0 url(../img/process/process-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 .process-block {
+  margin-top: 6.5rem;
   min-height: 25rem;
   text-align: center;
 }
@@ -375,11 +377,7 @@ textarea:focus {
   line-height: 15rem;
 }
 .process-text {
-  margin-top: 2rem;
   font-size: 1.7rem;
-}
-.section-header {
-  margin-bottom: 6.5rem;
 }
 .circle {
   display: inline-block;
@@ -389,14 +387,17 @@ textarea:focus {
   border-radius: 50%;
 }
 .circle-border {
+  position: relative;
   display: inline-block;
   width: 5.7rem;
   height: 5.6rem;
   padding: 0.5rem;
+  bottom: 2.4rem;
   border: 3px solid #18a7d0;
   border-radius: 50%;
+  background-color: #fff;
   text-align: center;
-  line-height: 4.5rem;
+  line-height: 4rem;
   color: #fff;
   font-family: 'HelveticaNeueCyr_bold', sans-serif;
   font-size: 3rem;

@@ -99,7 +99,7 @@ button, input, a, textarea {
     font-size: 3.5rem;
   }
   hr {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0;
     width: 5.6rem;
     border-top: 0.5rem solid @icons-color;
@@ -424,9 +424,11 @@ button, input, a, textarea {
 
 /* Оформление блока Как это работает */
 .process {
-  padding: 10rem 0 8rem;
-  background-color: @bg-light_1;
+  padding: 10rem 0 16rem;
+  background: @bg-light_1 url(../img/process/process-bg.jpg) center no-repeat;
+  background-size: cover;
   &-block {
+    margin-top: 6.5rem;
     min-height: 25rem;
     text-align: center;
   }
@@ -436,12 +438,9 @@ button, input, a, textarea {
     line-height: 15rem;
   }
   &-text {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     font-size: 1.7rem;
   }
-}
-.section-header {
-  margin-bottom: 6.5rem;
 }
 .circle {
   display: inline-block;
@@ -450,14 +449,17 @@ button, input, a, textarea {
   height: 100%;
   border-radius: 50%;
   &-border {
+    position: relative;
     display: inline-block;
     width: 5.7rem;
     height: 5.6rem;
     padding: 0.5rem;
+    bottom: 2.4rem;
     border: 3px solid @icons-color;
     border-radius: 50%;
+    background-color: @light;
     text-align: center;
-    line-height: 4.5rem;
+    line-height: 4rem;
     color: @light;
     .bold();
     font-size: 3rem;
