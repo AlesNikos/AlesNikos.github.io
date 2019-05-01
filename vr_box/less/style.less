@@ -425,7 +425,7 @@ button, input, a, textarea {
 /* Оформление блока Как это работает */
 .process {
   padding: 10rem 0 16rem;
-  background: @bg-light_1 url(../img/process/process-bg.jpg) center no-repeat;
+  background: @bg-light_2 url(../img/process/process-bg.png) center no-repeat;
   background-size: cover;
   &-block {
     margin-top: 6.5rem;
@@ -465,6 +465,40 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока Совместимость очков */
+.compatibility {
+  padding-bottom: 8rem;
+  background-color: @bg-light_2;
+  &-header {
+    h2 {
+      font-size: 3.5rem;
+      .bold();
+    }
+  }
+  &-block {
+    display: inline-block;
+    margin-top: 7rem;
+    margin-right: 4rem;
+    text-align: center;
+    &__text {
+      margin-top: 1.5rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+  }
+  &-image {
+    margin-top: 3rem;
+    &_mob {
+      display: none;
+    }
+    &__text {
+      margin-top: 2.5rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+  }
+}
+
 
 @media (max-width: 1199px) {
   .main {
@@ -500,6 +534,20 @@ button, input, a, textarea {
     }
     &-block {
       margin-right: 0;
+    }
+  }
+  .compatibility {
+    &-block {
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-image {
+      img {
+        max-width: 45rem;
+        width: 100%;
+      }
     }
   }
 }
@@ -578,6 +626,15 @@ button, input, a, textarea {
   }
   .opportunities-2 {
     display: none;
+  }
+  .compatibility {
+    text-align: center;
+    &-image {
+      display: none;
+      &_mob {
+        display: block;
+      }
+    }
   }
 }
 
@@ -695,8 +752,17 @@ button, input, a, textarea {
     }
   }
   .process {
-    padding-top: 3rem;
+    padding: 3rem 0 10rem;
   }
+  .compatibility {
+    padding-bottom: 5rem;
+    &-header {
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 590px) {
@@ -830,6 +896,29 @@ button, input, a, textarea {
   .circle {
     &-border {
       bottom: 3rem;
+    }
+  }
+  .compatibility {
+    &-header {
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+    &-image {
+      &__text {
+        font-size: 1.4rem;
+      }
+    }
+    &-block {
+      margin-top: 3rem;
+      img {
+        min-height: 20rem;
+        max-width: 10rem;
+        width: 100%;
+      }
+      &__text {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -1017,4 +1106,20 @@ button, input, a, textarea {
       font-size: 1.5rem;
     }
   }
+   .compatibility {
+     &-image {
+       margin: 3rem auto 0;
+       max-width: 25rem;
+       &__text {
+         font-size: 1.2rem;
+       }
+     }
+     &-block {
+       img {
+         min-height: 13rem;
+         max-width: 6.5rem;
+         width: 100%;
+       }
+     }
+   }
 }
