@@ -499,6 +499,35 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока Виртуальная реальность в очках */
+.video {
+  padding: 9rem 0 10rem;
+  background: @text url(../img/video/nature.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+  &-header {
+    margin: 0 auto 3rem;
+    max-width: 46rem;
+    h2 {
+      margin: 0;
+      font-size: 3.5rem;
+      .bold();
+      color: @light;
+    }
+  }
+  &-link {
+    &__text {
+      display: block;
+      margin-top: 1rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: @light;
+      &:hover {
+        color: darken(@light, 20%);
+      }
+    }
+  }
+}
 
 @media (max-width: 1199px) {
   .main {
@@ -762,7 +791,9 @@ button, input, a, textarea {
       }
     }
   }
-
+  .video {
+    padding: 3.5rem 0 5rem;
+  }
 }
 
 @media (max-width: 590px) {
@@ -918,6 +949,25 @@ button, input, a, textarea {
       }
       &__text {
         font-size: 1.4rem;
+      }
+    }
+  }
+  .video {
+    &-header {
+      max-width: 27rem;
+      h2 {
+        font-size: 2.1rem;
+      }
+    }
+    &-link {
+      &__image {
+        img {
+          max-width: 5rem;
+          width: 100%;
+        }
+      }
+      &__text {
+        font-size: 1.2rem;
       }
     }
   }
