@@ -562,6 +562,53 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока отзывы довольных клиентов */
+.feedback {
+  padding: 10rem 0 9rem;
+  background: @bg-light_1 url(../img/bg-line.png) bottom repeat-x;
+  &-header {
+    margin-bottom: 7rem;
+  }
+  &-blocks {
+    position: relative;
+  }
+  &-cube {
+    position: absolute;
+    top: -8.5rem;
+    right: -11.5rem;
+    z-index: 1;
+  }
+  &-wrap {
+    padding: 0;
+  }
+  &-block {
+    margin: 0.3rem;
+    padding: 3rem;
+    background-color: @light;
+    border: 1px solid #3eb7b7;
+    border-radius: 3px;
+  }
+  .media {
+    &-heading {
+      margin-left: 2.5rem;
+      font-size: 1.8rem;
+      .bold();
+    }
+    &-text {
+      margin-top: 2.5rem;
+      margin-bottom: 0;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .feedback {
+    &-cube {
+      right: -2.5rem;
+    }
+  }
+}
 
 @media (max-width: 1199px) {
   .main {
@@ -611,6 +658,11 @@ button, input, a, textarea {
         max-width: 45rem;
         width: 100%;
       }
+    }
+  }
+  .feedback {
+    &-cube {
+      display: none;
     }
   }
 }
@@ -712,6 +764,11 @@ button, input, a, textarea {
     &-header {
       margin: 0 auto 0;
       width: 80%;
+    }
+  }
+  .feedback {
+    &-block {
+      margin: 1rem;
     }
   }
 }
@@ -853,6 +910,15 @@ button, input, a, textarea {
       margin-left: auto;
       margin-right: auto;
       width: 80%;
+    }
+  }
+  .feedback {
+    padding: 5rem 0 4rem;
+    background: @bg-light_1;
+    &-wrap {
+      &:last-child {
+        display: none;
+      }
     }
   }
 }
@@ -1053,6 +1119,27 @@ button, input, a, textarea {
       }
     }
   }
+  .feedback {
+    &-header {
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+    .media {
+      &-object {
+        max-width: 6rem;
+      }
+      &-heading {
+        margin-left: 1.5rem;
+        font-size: 1.6rem;
+      }
+      &-text {
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -1238,47 +1325,61 @@ button, input, a, textarea {
       font-size: 1.5rem;
     }
   }
-   .compatibility {
-     &-image {
-       margin: 3rem auto 0;
-       max-width: 25rem;
-       &__text {
-         font-size: 1.2rem;
-       }
-     }
-     &-block {
-       img {
-         min-height: 13rem;
-         max-width: 6.5rem;
-         width: 100%;
-       }
-     }
-   }
-   .apps {
-     &-header {
-       width: 70%;
-     }
-     &-block {
-       width: 90%;
-       img {
-         width: 18rem;
-       }
-       h4 {
-         margin-bottom: 1rem;
-         font-size: 1.5rem;
-       }
-       p {
-         font-size: 1.2rem;
-       }
-       &-2 {
-         img {
-           width: 20rem;
-         }
-       }
-     }
-     &-btn {
-       padding: 1.5rem 3rem;
-       font-size: 1.2rem;
-     }
-   }
+  .compatibility {
+    &-image {
+      margin: 3rem auto 0;
+      max-width: 25rem;
+      &__text {
+        font-size: 1.2rem;
+      }
+    }
+    &-block {
+      img {
+        min-height: 13rem;
+        max-width: 6.5rem;
+        width: 100%;
+      }
+    }
+  }
+  .apps {
+    &-header {
+      width: 70%;
+    }
+    &-block {
+      width: 90%;
+      img {
+        width: 18rem;
+      }
+      h4 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      &-2 {
+        img {
+          width: 20rem;
+        }
+      }
+    }
+    &-btn {
+      padding: 1.5rem 3rem;
+      font-size: 1.2rem;
+    }
+  }
+  .feedback {
+    &-block {
+      padding: 1.5rem 1.5rem 2.5rem 2.5rem;
+    }
+    .media {
+      &-heading {
+        font-size: 1.4rem;
+      }
+      &-text {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
