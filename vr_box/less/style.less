@@ -529,6 +529,40 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока Более 100 игр и приложений */
+.apps {
+  padding: 10rem 0 8rem;
+  background: @bg-light_2 url(../img/bg-line.png) bottom repeat-x;
+  text-align: center;
+  &-icons {
+    margin: 3.5rem 0 5rem;
+  }
+  &-block {
+    text-align: left;
+    h4 {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      .bold();
+    }
+    p {
+      font-size: 1.7rem;
+    }
+    &-2 {
+      img {
+        padding-top: 3rem;
+      }
+      h4 {
+        margin-top: 3rem;
+      }
+    }
+  }
+  &-btn {
+    margin: 3.5rem auto 0;
+  }
+}
+
+
 @media (max-width: 1199px) {
   .main {
     &-content {
@@ -665,6 +699,21 @@ button, input, a, textarea {
       }
     }
   }
+  .apps {
+    &-block {
+      text-align: center;
+      h4, p {
+        text-align: left;
+      }
+      &-3 {
+        margin-top: 2rem;
+      }
+    }
+    &-header {
+      margin: 0 auto 0;
+      width: 80%;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -793,6 +842,18 @@ button, input, a, textarea {
   }
   .video {
     padding: 3.5rem 0 5rem;
+  }
+  .apps {
+    padding: 4rem 0 5rem;
+    background: @bg-light_2;
+    &-header {
+      width: 85%;
+    }
+    &-block {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
   }
 }
 
@@ -968,6 +1029,27 @@ button, input, a, textarea {
       }
       &__text {
         font-size: 1.2rem;
+      }
+    }
+  }
+  .apps {
+    &-header {
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+    &-icons {
+      img {
+        width: 12.6rem;
+      }
+    }
+    &-block {
+      h4 {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1.4rem;
       }
     }
   }
@@ -1170,6 +1252,33 @@ button, input, a, textarea {
          max-width: 6.5rem;
          width: 100%;
        }
+     }
+   }
+   .apps {
+     &-header {
+       width: 70%;
+     }
+     &-block {
+       width: 90%;
+       img {
+         width: 18rem;
+       }
+       h4 {
+         margin-bottom: 1rem;
+         font-size: 1.5rem;
+       }
+       p {
+         font-size: 1.2rem;
+       }
+       &-2 {
+         img {
+           width: 20rem;
+         }
+       }
+     }
+     &-btn {
+       padding: 1.5rem 3rem;
+       font-size: 1.2rem;
      }
    }
 }

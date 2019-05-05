@@ -460,6 +460,36 @@ textarea:focus {
 .video-link__text:hover {
   color: #cccccc;
 }
+/* Оформление блока Более 100 игр и приложений */
+.apps {
+  padding: 10rem 0 8rem;
+  background: #fcfcf6 url(../img/bg-line.png) bottom repeat-x;
+  text-align: center;
+}
+.apps-icons {
+  margin: 3.5rem 0 5rem;
+}
+.apps-block {
+  text-align: left;
+}
+.apps-block h4 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+}
+.apps-block p {
+  font-size: 1.7rem;
+}
+.apps-block-2 img {
+  padding-top: 3rem;
+}
+.apps-block-2 h4 {
+  margin-top: 3rem;
+}
+.apps-btn {
+  margin: 3.5rem auto 0;
+}
 @media (max-width: 1199px) {
   .main-content h1 {
     font-size: 3.3rem;
@@ -566,6 +596,20 @@ textarea:focus {
   }
   .compatibility-image_mob {
     display: block;
+  }
+  .apps-block {
+    text-align: center;
+  }
+  .apps-block h4,
+  .apps-block p {
+    text-align: left;
+  }
+  .apps-block-3 {
+    margin-top: 2rem;
+  }
+  .apps-header {
+    margin: 0 auto 0;
+    width: 80%;
   }
 }
 @media (max-width: 767px) {
@@ -681,6 +725,18 @@ textarea:focus {
   }
   .video {
     padding: 3.5rem 0 5rem;
+  }
+  .apps {
+    padding: 4rem 0 5rem;
+    background: #fcfcf6;
+  }
+  .apps-header {
+    width: 85%;
+  }
+  .apps-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 @media (max-width: 590px) {
@@ -815,6 +871,19 @@ textarea:focus {
   }
   .video-link__text {
     font-size: 1.2rem;
+  }
+  .apps-header h2 {
+    font-size: 2.2rem;
+  }
+  .apps-icons img {
+    width: 12.6rem;
+  }
+  .apps-block h4 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .apps-block p {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 450px) {
@@ -983,5 +1052,28 @@ textarea:focus {
     min-height: 13rem;
     max-width: 6.5rem;
     width: 100%;
+  }
+  .apps-header {
+    width: 70%;
+  }
+  .apps-block {
+    width: 90%;
+  }
+  .apps-block img {
+    width: 18rem;
+  }
+  .apps-block h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .apps-block p {
+    font-size: 1.2rem;
+  }
+  .apps-block-2 img {
+    width: 20rem;
+  }
+  .apps-btn {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
   }
 }
