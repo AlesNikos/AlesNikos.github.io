@@ -295,6 +295,10 @@ input[type="text"]::placeholder {
   background: #000 url(../img/order/order-bg.jpg) center no-repeat;
   background-size: cover;
 }
+.order-2 {
+  background: #000 url(../img/order/order-bg-2.jpg) center no-repeat;
+  background-size: cover;
+}
 .order-title {
   margin-top: 6rem;
   margin-bottom: 2rem;
