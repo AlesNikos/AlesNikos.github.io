@@ -64,6 +64,26 @@ textarea:focus {
 .form-btn {
   padding: 2rem 4.4rem;
 }
+/* Firefox до версии 51 */
+input[type="text"]::-moz-placeholder {
+  color: #fff;
+  /* Цвет подсказывающего текста */
+}
+/* Chrome, до версии 57, Opera до версии 44, Safari до версии 10.1 и Android */
+input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
+}
+/* Internet Explorer */
+input[type="text"]:-ms-input-placeholder {
+  color: #fff;
+}
+/* Microsoft Edge */
+input[type="text"]::-ms-input-placeholder {
+  color: #fff;
+}
+input[type="text"]::placeholder {
+  color: #fff;
+}
 /* Typography */
 .section-header {
   text-align: center;
@@ -527,6 +547,25 @@ textarea:focus {
   margin-bottom: 0;
   font-size: 1.7rem;
 }
+/* Оформление блока Как мы работаем */
+.operation {
+  padding: 10rem 0 9rem;
+  background-color: #fcfcf6;
+  text-align: center;
+}
+.operation-header {
+  margin-bottom: 8rem;
+}
+.operation-block {
+  min-height: 27rem;
+}
+.operation-text {
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+}
+.operation-text_num {
+  display: none;
+}
 @media (max-width: 1400px) {
   .feedback-cube {
     right: -2.5rem;
@@ -658,6 +697,9 @@ textarea:focus {
   }
   .feedback-block {
     margin: 1rem;
+  }
+  .operation-text_num {
+    display: inline;
   }
 }
 @media (max-width: 767px) {
@@ -792,6 +834,17 @@ textarea:focus {
   }
   .feedback-wrap:last-child {
     display: none;
+  }
+  .operation {
+    padding: 5rem 0 3rem;
+  }
+  .operation-header {
+    margin-bottom: 5rem;
+  }
+  .operation-block {
+    margin: 0 auto 0;
+    max-width: 35rem;
+    min-height: 22rem;
   }
 }
 @media (max-width: 590px) {
@@ -956,6 +1009,19 @@ textarea:focus {
   .feedback .media-text {
     margin-top: 1.5rem;
     font-size: 1.4rem;
+  }
+  .operation-header h2 {
+    font-size: 2.2rem;
+  }
+  .operation-block {
+    max-width: 26rem;
+    min-height: 17rem;
+  }
+  .operation-image {
+    width: 35%;
+  }
+  .operation-text {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 450px) {
@@ -1156,6 +1222,13 @@ textarea:focus {
   }
   .feedback .media-text {
     margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .operation-block {
+    max-width: 19rem;
+    min-height: 14rem;
+  }
+  .operation-text {
     font-size: 1.2rem;
   }
 }

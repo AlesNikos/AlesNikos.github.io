@@ -89,6 +89,26 @@ button, input, a, textarea {
     padding: 2rem 4.4rem;
   }
 }
+/* Firefox до версии 51 */
+input[type="text"]::-moz-placeholder {
+  color: @light;/* Цвет подсказывающего текста */
+}
+/* Chrome, до версии 57, Opera до версии 44, Safari до версии 10.1 и Android */
+input[type="text"]::-webkit-input-placeholder {
+  color: @light;
+}
+/* Internet Explorer */
+input[type="text"]:-ms-input-placeholder {
+  color: @light;
+}
+/* Microsoft Edge */
+input[type="text"]::-ms-input-placeholder {
+  color: @light;
+}
+
+input[type="text"]::placeholder {
+  color: @light;
+}
 
 /* Typography */
 .section-header {
@@ -602,6 +622,27 @@ button, input, a, textarea {
   }
 }
 
+/* Оформление блока Как мы работаем */
+.operation {
+  padding: 10rem 0 9rem;
+  background-color: @bg-light_2;
+  text-align: center;
+  &-header {
+    margin-bottom: 8rem;
+  }
+  &-block {
+    min-height: 27rem;
+  }
+  &-text {
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    &_num {
+      display: none;
+    }
+  }
+}
+
+
 @media (max-width: 1400px) {
   .feedback {
     &-cube {
@@ -771,6 +812,13 @@ button, input, a, textarea {
       margin: 1rem;
     }
   }
+  .operation {
+    &-text {
+      &_num {
+        display: inline;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -919,6 +967,17 @@ button, input, a, textarea {
       &:last-child {
         display: none;
       }
+    }
+  }
+  .operation {
+    padding: 5rem 0 3rem;
+    &-header {
+      margin-bottom: 5rem;
+    }
+    &-block {
+      margin: 0 auto 0;
+      max-width: 35rem;
+      min-height: 22rem;
     }
   }
 }
@@ -1138,6 +1197,23 @@ button, input, a, textarea {
         margin-top: 1.5rem;
         font-size: 1.4rem;
       }
+    }
+  }
+  .operation {
+    &-header {
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+    &-block {
+      max-width: 26rem;
+      min-height: 17rem;
+    }
+    &-image {
+      width: 35%;
+    }
+    &-text {
+      font-size: 1.6rem;
     }
   }
 }
@@ -1380,6 +1456,15 @@ button, input, a, textarea {
         margin-top: 1.5rem;
         font-size: 1.2rem;
       }
+    }
+  }
+  .operation {
+    &-block {
+      max-width: 19rem;
+      min-height: 14rem;
+    }
+    &-text {
+      font-size: 1.2rem;
     }
   }
 }
