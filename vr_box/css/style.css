@@ -603,6 +603,7 @@ footer {
     right: -2.5rem;
   }
 }
+/* Оформление модальных окон */
 @media (max-width: 1199px) {
   .main-content h1 {
     font-size: 3.3rem;
