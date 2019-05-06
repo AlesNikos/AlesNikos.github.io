@@ -404,8 +404,8 @@ input[type="text"]::placeholder {
     max-width: 41rem;
     background-color: @text;
     text-align: center;
-    border-radius: 3px;
     border: 4px solid #21a3af;
+    border-radius: 3px;
     &_mob {
       display: none;
     }
@@ -676,6 +676,60 @@ footer {
   background-color: @text;
 }
 
+/* Оформление модальных окон */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.6);
+  &-content {
+    padding: 4rem 6rem 3rem;
+    max-width: 40rem;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    top: 15%;
+    background-color: @text;
+    transform: translateX(-50%);
+    border: 4px solid #21a3af;
+    border-radius: 3px;
+  }
+  &-header {
+    margin-bottom: 3.5rem;
+    font-size: 2.2rem;
+    color: @light;
+  }
+  /* Подпись под кнопкой */
+  small {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: @light;
+  }
+  &-close {
+    position: absolute;
+    top: -0.9rem;
+    right: -0.9rem;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid #21a3af;
+    border-radius: 50%;
+    background-color: @text;
+    color: #21a3af;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+
 @media (max-width: 1400px) {
   .feedback {
     &-cube {
@@ -683,9 +737,6 @@ footer {
     }
   }
 }
-
-/* Оформление модальных окон */
-
 
 @media (max-width: 1199px) {
   .main {
