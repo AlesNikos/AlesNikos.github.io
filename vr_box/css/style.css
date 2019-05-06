@@ -135,8 +135,7 @@ input[type="text"]::placeholder {
   right: 0;
 }
 .header {
-  height: 8.7rem;
-  padding-top: 2rem;
+  padding: 2rem 0;
   background: rgba(0, 0, 0, 0.62);
 }
 /* Оформление логотипа */
@@ -570,6 +569,35 @@ input[type="text"]::placeholder {
 .operation-text_num {
   display: none;
 }
+/* Оформление блока Остались вопросы? */
+.questions {
+  padding: 6rem 0;
+  background-color: #f8f8f0;
+  text-align: center;
+}
+.questions-header {
+  margin: 0 auto;
+  max-width: 36rem;
+}
+.questions-header h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+}
+.questions-link {
+  margin: 0 auto;
+  max-width: 26.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #040606;
+  border-bottom: 2px dotted #040606;
+}
+/* Оформление футера */
+footer {
+  padding: 2rem 0;
+  background-color: #000;
+}
 @media (max-width: 1400px) {
   .feedback-cube {
     right: -2.5rem;
@@ -707,14 +735,10 @@ input[type="text"]::placeholder {
   }
 }
 @media (max-width: 767px) {
-  .header {
-    height: 10.7rem;
-  }
-  .logo .media-left img {
-    width: 7rem;
-  }
-  .logo .media h4 {
-    font-size: 1.5rem;
+  .logo {
+    margin: 0 auto;
+    max-width: 47rem;
+    width: 100%;
   }
   .phone-block {
     text-align: center;
@@ -852,6 +876,15 @@ input[type="text"]::placeholder {
   }
 }
 @media (max-width: 590px) {
+  .logo {
+    max-width: 37rem;
+  }
+  .logo .media-left img {
+    width: 7rem;
+  }
+  .logo .media h4 {
+    font-size: 1.5rem;
+  }
   .main-content h1 {
     font-size: 2.2rem;
   }
@@ -1027,13 +1060,19 @@ input[type="text"]::placeholder {
   .operation-text {
     font-size: 1.6rem;
   }
+  .questions {
+    padding: 3rem 0;
+  }
+  .questions-header h2 {
+    font-size: 2.2rem;
+  }
+  .questions-link {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 450px) {
-  .header {
-    height: 10.7rem;
-  }
-  .logo .media-body {
-    vertical-align: bottom;
+  .logo {
+    max-width: 28rem;
   }
   .logo .media-left img {
     max-width: 5rem;
