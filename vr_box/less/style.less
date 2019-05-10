@@ -76,7 +76,8 @@ button, input, a, textarea {
   /* Поле для ввода */
   &-input {
     display: block;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    max-width: 27rem;
     width: 100%;
     background-color: @text;
     border: 2px solid @light;
@@ -86,7 +87,9 @@ button, input, a, textarea {
     color: @light;
   }
   &-btn {
-    padding: 2rem 4.4rem;
+    max-width: 27rem;
+    width: 100%;
+    padding: 2rem 4rem;
   }
 }
 /* Firefox до версии 51 */
@@ -400,7 +403,7 @@ input[type="text"]::placeholder {
   }
   &-form {
     margin-left: 4.5rem;
-    padding: 3rem 6.5rem;
+    padding: 4rem 6.5rem;
     max-width: 41rem;
     background-color: @text;
     text-align: center;
@@ -411,8 +414,8 @@ input[type="text"]::placeholder {
     }
     /* Заголовок формы */
     &-header {
-       margin-top: 0.5rem;
-       margin-bottom: 3.5rem;
+       margin-top: 0;
+       margin-bottom: 3rem;
        font-size: 2.2rem;
        color: @light;
     }
@@ -687,9 +690,9 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(19, 19, 19, 0.82);
   &-content {
-    padding: 4rem 6rem 3rem;
+    padding: 4rem 5.4rem 3rem;
     max-width: 40rem;
     width: 100%;
     position: fixed;
@@ -702,10 +705,12 @@ footer {
     border-radius: 3px;
   }
   &-header {
-    margin-bottom: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
     font-size: 2.2rem;
     color: @light;
   }
+
   /* Подпись под кнопкой */
   small {
     display: block;
@@ -1561,6 +1566,32 @@ footer {
     }
     &-text {
       font-size: 1.2rem;
+    }
+  }
+  /* Стилизация модальных окон под мобильные устройства */
+  .popup {
+    &-content {
+      padding: 2rem 3rem;
+      max-width: 22.5rem;
+    }
+    &-header {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    small {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .form {
+      &-input {
+        margin: 0.5rem auto;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+      &-btn {
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+      }
     }
   }
 }
