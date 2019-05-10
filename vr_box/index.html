@@ -129,7 +129,7 @@
           </div>
         
         </div>
-        <button class="button about-btn">Выбрать комплектацию и Заказать vr box 2</button>
+        <button class="button about-btn equipment-btn">Выбрать комплектацию и Заказать vr box 2</button>
       </div><!-- about-block -->
       
     </div>
@@ -450,7 +450,7 @@
           </div>
         </div>
       </div>
-      <button class="button apps-btn">Заказать vr box 2</button>
+      <button class="button apps-btn main-btn">Заказать vr box 2</button>
     </div>
   </section><!-- apps -->
 
@@ -699,15 +699,38 @@
 
   <!-- Заказать vr box -->
   <div class="popup popup-order">
-    <!-- Само (белое) модальное окно -->
     <div class="popup-dialog">
-      <!-- Содержимое модального окна  -->
       <div class="popup-content">
         <button class="popup-close">&times;</button>
         <h4 class="popup-header">Введите ваши данные <br>и нажмите заказать</h4>
         <form class="form" action="#">
           <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
           <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+          <button class="form-btn button" type="submit">Заказать vr box 2</button>
+          <small>Перезвоним в течение 10 минут</small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Выбрать комплектацию -->
+  <div class="popup popup-equipment">
+    <div class="popup-dialog">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h4 class="popup-header">Введите ваши данные <br>и нажмите заказать</h4>
+        <form class="form" action="#">
+          <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
+          <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+          <div class="select-wrapper">
+            <select class="form-select" name="select" id="equipment-select">
+              <option value="1">Без Bluetooth пульта</option>
+              <option value="2" selected>С Bluetooth пультом</option>
+            </select>
+            <div class="select-arrow"></div>
+            <div class="select-arrow"></div>
+          </div>
+          
           <button class="form-btn button" type="submit">Заказать vr box 2</button>
           <small>Перезвоним в течение 10 минут</small>
         </form>
@@ -728,6 +751,11 @@
       $('.main-btn').on('click', function (event) {
         event.preventDefault();
         $('.popup-order').fadeIn();
+      });
+
+      $('.equipment-btn').on('click', function (event) {
+        event.preventDefault();
+        $('.popup-equipment').fadeIn();
       });
 
       $('.popup-close').on('click', function (event) {
