@@ -730,13 +730,31 @@
             <div class="select-arrow"></div>
             <div class="select-arrow"></div>
           </div>
-          
           <button class="form-btn button" type="submit">Заказать vr box 2</button>
           <small>Перезвоним в течение 10 минут</small>
         </form>
       </div>
     </div>
   </div>
+
+  <!-- Задать вопрос менеджеру -->
+  <div class="popup popup-question">
+    <div class="popup-dialog">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h4 class="popup-header">Оставьте заявку <br>мы свяжемся с вами и ответим на все вопросы</h4>
+        <form class="form" action="#">
+          <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
+          <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+          <button class="form-btn button" type="submit">Оставить заявку</button>
+          <small>Перезвоним в течение 10 минут</small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -756,6 +774,11 @@
       $('.equipment-btn').on('click', function (event) {
         event.preventDefault();
         $('.popup-equipment').fadeIn();
+      });
+
+      $('.questions-link').on('click', function (event) {
+        event.preventDefault();
+        $('.popup-question').fadeIn();
       });
 
       $('.popup-close').on('click', function (event) {
