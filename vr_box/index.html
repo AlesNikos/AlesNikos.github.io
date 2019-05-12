@@ -199,9 +199,9 @@
           <!-- Форма для мобильной версии -->
           <div class="order-form order-form_mob">
             <h2 class="order-form-header">Введите ваши данные <br>и нажмите заказать</h2>
-            <form class="form" action="#">
-              <input class="form-input order-form-input" id="name-1" placeholder="Введите имя" required type="text">
-              <input class="form-input order-form-input" id="phone-1" placeholder="Введите телефон" required type="text">
+            <form class="form" action="mailer/smart.php" method="POST">
+              <input class="form-input order-form-input" id="name-order-1" name="user_name" placeholder="Введите имя" required="required" type="text">
+              <input class="form-input order-form-input" id="phone-order-1" name="user_phone" placeholder="Введите телефон" required="required" type="text">
               <button class="form-btn button order-btn" type="submit">Заказать vr box 2</button>
               <small>Перезвоним в течение 10 минут</small>
             </form>
@@ -232,9 +232,9 @@
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
           <div class="order-form order-form_desktop">
             <h2 class="order-form-header">Введите ваши данные <br>и нажмите заказать</h2>
-            <form class="form" action="#">
-              <input class="form-input" id="name-1_1" placeholder="Введите имя" required type="text">
-              <input class="form-input" id="phone-1_1" placeholder="Введите телефон" required type="text">
+            <form class="form" action="mailer/smart.php" method="POST">
+              <input class="form-input" id="name-order-1_1" name="user_name" placeholder="Введите имя" required="required" type="text">
+              <input class="form-input" id="phone-order-1_1" name="user_phone" placeholder="Введите телефон" required="required" type="text">
               <button class="form-btn button order-btn" type="submit">Заказать vr box 2</button>
               <small>Перезвоним в течение 10 минут</small>
             </form>
@@ -411,8 +411,8 @@
         <div class="video-header">
           <h2>Виртуальная реальность в очках vr box</h2>
         </div>
-        <a class="video-link__image" href="#"><img src="img/video/play.png" alt="Значок play"></a>
-        <a class="video-link__text" href="#">Смотреть видео</a>
+        <a class="video-link__image popup-youtube" rel="nofollow" href="https://www.youtube.com/watch?v=xc2TsRwqjds&feature=youtu.be"><img src="img/video/play.png" alt="Значок play"></a>
+        <a class="video-link__text popup-youtube" rel="nofollow" href="https://www.youtube.com/watch?v=xc2TsRwqjds&feature=youtu.be">Смотреть видео</a>
       </div>
     </div>
   </section><!-- video -->
@@ -592,9 +592,9 @@
           <!-- Форма для мобильной версии -->
           <div class="order-form order-form_mob">
             <h2 class="order-form-header">Введите ваши данные <br>и нажмите заказать</h2>
-            <form class="form" action="#">
-              <input class="form-input order-form-input" id="name-2" placeholder="Введите имя" required type="text">
-              <input class="form-input order-form-input" id="phone-2" placeholder="Введите телефон" required type="text">
+            <form class="form" action="mailer/smart.php" method="POST">
+              <input class="form-input order-form-input" id="name-order-2" name="user_name" placeholder="Введите имя" required="required" type="text">
+              <input class="form-input order-form-input" id="phone-order-2" name="user_phone" placeholder="Введите телефон" required="required" type="text">
               <button class="form-btn button order-btn" type="submit">Заказать vr box 2</button>
               <small>Перезвоним в течение 10 минут</small>
             </form>
@@ -625,9 +625,9 @@
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
           <div class="order-form order-form_desktop">
             <h2 class="order-form-header">Введите ваши данные <br>и нажмите заказать</h2>
-            <form class="form" action="#">
-              <input class="form-input" id="name-2_1" placeholder="Введите имя" required type="text">
-              <input class="form-input" id="phone-2_2" placeholder="Введите телефон" required type="text">
+            <form class="form" action="mailer/smart.php" method="POST">
+              <input class="form-input" id="name-oder-2_1" name="user_name" placeholder="Введите имя" required="required" type="text">
+              <input class="form-input" id="phone-oder-2_2" name="user_phone" placeholder="Введите телефон" required="required" type="text">
               <button class="form-btn button order-btn" type="submit">Заказать vr box 2</button>
               <small>Перезвоним в течение 10 минут</small>
             </form>
@@ -681,15 +681,15 @@
 
   <!-- Заказать звонок -->
   <div class="popup popup-call">
-    <!-- Само (белое) модальное окно -->
+    <!-- Само модальное окно -->
     <div class="popup-dialog">
       <!-- Содержимое модального окна  -->
       <div class="popup-content">
         <button class="popup-close">&times;</button>
         <h4 class="popup-header">Введите ваши данные <br>и нажмите заказать звонок</h4>
-        <form class="form" action="#">
-          <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
-          <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+        <form class="form" action="mailer/smart.php" method="POST">
+          <input class="form-input" id="name-call" name="user_name" placeholder="Введите имя" required="required" type="text">
+          <input class="form-input" id="phone-call" name="user_phone" placeholder="Введите телефон" required="required" type="text">
           <button class="form-btn button" type="submit">Заказать звонок</button>
           <small>Перезвоним в течение 10 минут</small>
         </form>
@@ -703,9 +703,9 @@
       <div class="popup-content">
         <button class="popup-close">&times;</button>
         <h4 class="popup-header">Введите ваши данные <br>и нажмите заказать</h4>
-        <form class="form" action="#">
-          <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
-          <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+        <form class="form" action="mailer/smart.php" method="POST">
+          <input class="form-input" id="name-order-3" name="user_name" placeholder="Введите имя" required="required" type="text">
+          <input class="form-input" id="phone-order-3" name="user_phone" placeholder="Введите телефон" required="required" type="text">
           <button class="form-btn button" type="submit">Заказать vr box 2</button>
           <small>Перезвоним в течение 10 минут</small>
         </form>
@@ -719,9 +719,9 @@
       <div class="popup-content">
         <button class="popup-close">&times;</button>
         <h4 class="popup-header">Введите ваши данные <br>и нажмите заказать</h4>
-        <form class="form" action="#">
-          <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
-          <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+        <form class="form" action="mailer/smart.php" method="POST">
+          <input class="form-input" id="name-equipment" name="user_name" placeholder="Введите имя" required="required" type="text">
+          <input class="form-input" id="phone-equipment" name="user_phone" placeholder="Введите телефон" required="required" type="text">
           <div class="select-wrapper">
             <select class="form-select" name="select" id="equipment-select">
               <option value="1">Без Bluetooth пульта</option>
@@ -743,9 +743,9 @@
       <div class="popup-content">
         <button class="popup-close">&times;</button>
         <h4 class="popup-header">Оставьте заявку <br>мы свяжемся с вами и ответим на все вопросы</h4>
-        <form class="form" action="#">
-          <input class="form-input" id="name-3" placeholder="Введите имя" required type="text">
-          <input class="form-input" id="phone-3" placeholder="Введите телефон" required type="text">
+        <form class="form" action="mailer/smart.php" method="POST">
+          <input class="form-input" id="name-question" name="user_name" placeholder="Введите имя" required="required" type="text">
+          <input class="form-input" id="phone-question" name="user_phone" placeholder="Введите телефон" required="required" type="text">
           <button class="form-btn button" type="submit">Оставить заявку</button>
           <small>Перезвоним в течение 10 минут</small>
         </form>
@@ -753,11 +753,52 @@
     </div>
   </div>
 
+  <!-- Окно благодарности -->
+  <div class="thanks-page">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-lg-5 col-md-6 col-sm-8 col-xs-12">
+            <div class="logo">
+              <div class="media">
+                <div class="media-left">
+                  <img class="media-object" src="img/logo.png" alt="VR Box 2">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Производство и продажа VR очков. <br>Доставка по всей России.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-0 col-xs-12">
+            <div class="phone-block">
+              <a class="phone-number" href="#">+79104551703</a>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div><!-- header -->
+
+    <div class="container">
+      <div class="thanks-page-title">
+        <h1>Спасибо за заявку</h1>
+        <p class="thanks-page-subtitle">Мы свяжемся с вами и уточним <br>все детали заявки. Если у вас срочный вопрос <br>позвоните по тел. : <strong>+79104551703</strong></p>
+        <button class="button thanks-page-btn">Вернуться на сайт</button>
+      </div>
+    </div>
+
+  </div>
 
 
-
+  <!-- Подключение стилей Magnific popup -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Подключение скрипта Magnific popup -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
 
   <script>
     $(document).ready(function(){
@@ -781,12 +822,72 @@
         $('.popup-question').fadeIn();
       });
 
+      $('.popup-youtube').magnificPopup({
+        type: 'iframe',
+        iframe: {
+          patterns: {
+            youtube: {
+              index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+              id: 'v=', // String that splits URL in a two parts, second part should be %id%
+              // Or null - full URL will be returned
+              // Or a function that should return %id%, for example:
+              // id: function(url) { return 'parsed id'; }
+
+              src: 'https://www.youtube.com/embed/xc2TsRwqjds?rel=0&autoplay=1' // URL that will be set as a source for iframe.
+            }
+          } 
+        }
+      });
+
       $('.popup-close').on('click', function (event) {
         event.preventDefault();
         $('.popup').fadeOut();
       });
+
+      $('form').submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+        }).done(function () {
+          $(this).find("input").val("");
+          // alert("Сообщение отправлено");
+          $('.thanks-page').fadeIn();
+          $("form").trigger("reset");
+        });
+        $('.thanks-page-btn').on('click', function (event) {
+          event.preventDefault();
+          $('.thanks-page').fadeOut()
+        });
+        return false;
+      });
+
     });
   </script>
+
+  <!-- Иницализируем отправку формы -->
+  <!-- <script>
+    $('form').submit(function (event) {
+      event.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function () {
+        $(this).find("input").val("");
+        alert("Сообщение отправлено");
+        // $('.thanks-page').fadeIn();
+        $("form").trigger("reset");
+      });
+      $('.thanks-page-btn').on('click', function (event) {
+        event.preventDefault();
+        $('.thanks-page').fadeOut()
+      });
+      return false;
+    });
+  </script> -->
 
 </body>
 </html>
